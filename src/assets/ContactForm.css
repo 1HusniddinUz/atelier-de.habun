@@ -1,0 +1,323 @@
+/* ===== Parisian Elegance Theme ===== */
+:root {
+    /* Palette */
+    --ivory: #F7F3EF;          /* Ivory White */
+    --champagne: #E8DCC8;      /* Champagne Beige */
+    --taupe: #B5A68C;          /* Dusty Taupe */
+    --charcoal: #3A3A3A;       /* Soft Charcoal */
+    --gold: #C6A664;           /* Muted Gold (accent) */
+
+    /* Derived */
+    --bg: var(--ivory);
+    --card: #ffffff;
+    --card-stroke: rgba(58, 58, 58, 0.10);   /* soft charcoal at 10% */
+    --text: var(--charcoal);
+    --muted: color-mix(in oklab, var(--charcoal) 60%, white 40%);
+    --shadow-soft: 0 10px 24px rgba(58, 58, 58, 0.08);
+    --radius-xl: 16px;
+    --radius-2xl: 20px;
+    --transition: 220ms cubic-bezier(.2,.8,.2,1);
+}
+
+/* Optional luxury type feel (if you have these fonts) */
+/* body { font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; } */
+/* .serif { font-family: "Playfair Display", "Times New Roman", serif; } */
+
+/* ===== Layout ===== */
+.contact {
+    width: 100%;
+    color: var(--text);
+}
+
+.contact__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 16px 56px;
+}
+
+.contact__header {
+    background-color: transparent;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: clamp(22px, 2.4vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+.contact__subtitle {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+/* Gold underline accent under the title */
+.contact__title::after {
+    content: "";
+    width: 64px;
+    height: 2px;
+    margin-top: 10px;
+    background: var(--gold);
+}
+
+.contact__grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 120vh;
+    padding: 40px 0px;
+    align-content: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact__grid {
+        gap: 32px;
+    }
+}
+
+/* ===== Card ===== */
+.card {
+    border-radius: var(--radius-2xl);
+    background: var(--card);
+    border: 1px solid var(--card-stroke);
+    box-shadow: var(--shadow-soft);
+    padding: 24px;
+}
+
+.card--map {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand__logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    object-fit: cover;
+    border: 1px solid rgba(58, 58, 58, 0.12);
+    background: #fff;
+}
+
+.brand__meta { min-width: 0; }
+
+.brand__role {
+    margin: 0;
+    font-size: 18px;
+    color: var(--charcoal);
+    font-weight: 600;
+}
+
+.brand__name {
+    margin-top: 2px;
+    color: var(--muted);
+}
+
+.card__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px 0 20px;
+}
+
+.card__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 650;
+    color: var(--charcoal);
+    letter-spacing: .2px;
+}
+
+.card__title-icon {
+    color: var(--gold);
+}
+
+/* ===== Contact list ===== */
+.contact__list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0 0;
+}
+
+.contact__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid var(--card-stroke);
+    background: #fff;
+    color: var(--charcoal);
+    text-decoration: none;
+    transition: background var(--transition), transform var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+}
+
+.contact__link:hover {
+    background: color-mix(in oklab, var(--champagne) 35%, white 65%);
+    border-color: color-mix(in oklab, var(--gold) 30%, var(--card-stroke) 70%);
+    box-shadow: 0 6px 18px rgba(198, 166, 100, 0.18);
+    transform: translateY(-1px);
+}
+
+.contact__link:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--gold) 35%, transparent);
+}
+
+.contact__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: color-mix(in oklab, var(--gold) 16%, white);
+    border: 1px solid color-mix(in oklab, var(--gold) 40%, white);
+    color: var(--gold);
+    flex: 0 0 36px;
+}
+
+.contact__icon--phone {
+    /* keeps gold accent, just ensures consistency */
+}
+
+.contact__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.contact__label {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.contact__value {
+    font-size: 15px;
+    color: var(--charcoal);
+    letter-spacing: .2px;
+}
+
+/* Social row */
+.social__row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 520px) {
+    .social__row { flex-direction: row; }
+}
+
+.social__btn { justify-content: space-between; }
+
+.social__btn .contact__icon {
+    width: 34px; height: 34px; border-radius: 9px;
+}
+
+.social__btn--ig .contact__icon,
+.social__btn--tg .contact__icon {
+    /* unify icon chips to the same gold tone for luxury minimalism */
+    background: color-mix(in oklab, var(--gold) 18%, white);
+    border-color: color-mix(in oklab, var(--gold) 45%, white);
+}
+
+.social__text {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.social__brand {
+    color: var(--charcoal);
+    font-weight: 600;
+    letter-spacing: .2px;
+}
+
+.social__platform {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.social__ext {
+    color: var(--gold);
+    opacity: 0.0;
+    transition: opacity var(--transition), transform var(--transition);
+}
+
+.social__btn:hover .social__ext {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+/* Hours */
+.contact__hours {
+    margin-top: 14px;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.contact__hours-icon { color: var(--gold); }
+
+/* ===== Map ===== */
+.map {
+    padding: 16px 20px 22px 20px;
+}
+
+.map__frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--card-stroke);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+}
+
+.map__frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Fallback for browsers without aspect-ratio */
+@supports not (aspect-ratio: 16 / 10) {
+    .map__frame { padding-top: 62.5%; }
+    .map__frame iframe { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+}
+
+/* Motion */
+@media (prefers-reduced-motion: reduce) {
+    .contact__link, .social__ext { transition: none; }
+}

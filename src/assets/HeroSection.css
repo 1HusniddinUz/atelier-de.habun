@@ -1,0 +1,117 @@
+/* Hero Section umumiy */
+#HeroSections {
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Matn qismi */
+#HeroSections #HeroText {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* yonlardan bo‘sh joy */
+    box-sizing: border-box;
+}
+
+#HeroText h1 {
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+#HeroText p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: white;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#HeroText button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    width: 200px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#HeroText button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Background rasmi */
+#HeroSections #HeroProduct_bg {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("./media/hero_bg.png");
+    filter: blur(11px) brightness(0.66);
+}
+
+/* -------- RESPONSIVE -------- */
+
+/* Planshet (900px gacha) */
+@media (max-width: 900px) {
+    #HeroText h1 {
+        font-size: 2.2rem;
+        width: 90%;
+    }
+
+    #HeroText p {
+        font-size: 1rem;
+        width: 85%;
+    }
+
+    #HeroText button {
+        width: 180px;
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobil (600px gacha) */
+@media (max-width: 600px) {
+    #HeroSections {
+        height: 80vh;
+        min-height: 400px;
+    }
+
+    #HeroText h1 {
+        font-size: 1.8rem;
+        width: 95%;
+    }
+
+    #HeroText p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    #HeroText button {
+        width: 160px;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
