@@ -1,9 +1,9 @@
 const translationsUz = {
     headersec: "Bosh sahifa",
-    products: `Mahsulotlar`,
+    products: `Kolleksiyalar`,
     contact: `Bog'lanish uchun`,
-    quotes: `“ATELIER DE.HABUN — Har bir libosda ayollik sehri.”`,
-    aboutUs: `"O‘zbekiston hunarmandlari va boshqa an’anaviy san’at ustalari bugungi kunda jahon e’tiborida. Saytimizda biz eng qiziqarli va talab yuqori bo‘lgan mahsulotlarni eng yaxshi ustalardan jamladik. Vitrinamizdan istalgan mahsulotni buyurtma qilganingizda, qisqa muddatda ishlab chiqaruvchidan original mahsulotni qo‘lga kiritishingizga ishonch hosil qilishingiz mumkin."`,
+    quotes: `“ATELIER DE HABUN — Muhabbat ipi bilan bog‘langan san’at.”`,
+    aboutUs: `ATELIER DE HABUN — 2000-yildan beri ayollar va erkaklar uchun individual dizayn, bichish va tikish xizmatlarini taqdim etadigan ustaxona. Ishimiz markazi sifat, qulaylik va shaxsiy uslub. Ustoz-shogird maktabimizda 120+ shogird yetishgan. Mehnatimiz “Anor — 2019 yil eng faol tadbirkor ayol” tashakkurnomasi bilan e’tirof etilgan. Mahsulotlarimiz ustaxonada ham, elektron bozorlarda ham mavjud. ATELIER DE HABUN — nafislik va ishonchni bir libosda jamlab, sizning uslubingizni aniq ifodalaydi.`,
     generalManager: `Bosh direktor: `,
     managerName: `BAQOYEVA MUHABBAT`,
     womenSuit: `Ayollar ko'ylagi`,
@@ -11,6 +11,7 @@ const translationsUz = {
     phone: `Telefon: `,
     email: `E-pochta: `,
     location: `Manzil: `,
+    locationData: `Buxoro viloyati Peshku tumani Decha MFY Decha ko'chasi 3-uy `,
 };
 
 export default translationsUz;

@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <h1>ATELIER DE.HABUN</h1>
+            <h1>ATELIER DE HABUN</h1>
 
             {/* Desktop va Mobile Menu */}
             <ul className={`nav-links ${isOpen ? "open" : ""}`}>

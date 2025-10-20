@@ -11,7 +11,7 @@ const ContactForm = () => {
             <div className="contact__container">
                 <header className="contact__header">
                     <h2 className="contact__title">{t("contact")}</h2>
-                    <p className="contact__subtitle">ATELIER DE HABUN · {t("location")}</p>
+                    <p className="contact__subtitle">{t("location")} {t("locationData")}</p>
                 </header>
 
                 <div className="contact__grid">

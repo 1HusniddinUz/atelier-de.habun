@@ -9,7 +9,7 @@ const HeroSections = () => {
         <div id="HeroText">
             <h1>{t(`quotes`)}</h1>
             <p>{t(`aboutUs`)}</p>
-            <a href="#OurProducts"><button>{t(`products`)}</button></a>
+            {/*<a href="#OurProducts"><button>{t(`products`)}</button></a>*/}
         </div>
         <div id="HeroProduct_bg"></div>
     </div>

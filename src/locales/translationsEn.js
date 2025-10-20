@@ -1,9 +1,9 @@
 const translationsEn = {
     headersec: "Home page",
-    products: `Products`,
+    products: `Collections`,
     contact: `Contact Us`,
-    quotes: `“ATELIER DE.HABUN — The magic of femininity in every dress.”`,
-    aboutUs: `"Uzbek artisans and other traditional artists are now in the spotlight of the world. On our website, we have collected the most interesting and popular products from the best craftsmen. When you order any product from our showcase, you can be sure that you will receive an original product from the manufacturer in a short time."`,
+    quotes: `“ATELIER DE HABUN — Art tied with the thread of love”`,
+    aboutUs: `ATELIER DE HABUN is a studio providing bespoke design, cutting, and tailoring for women and men since 2000. We put quality, comfort, and personal style at the center of everything we do. Our master–apprentice school has trained over 120 students. Our work has been recognized with the commendation “Anor — 2019 Most Active Woman Entrepreneur.” You can find our products both in our studio and on online marketplaces. ATELIER DE HABUN brings elegance and confidence together in every garment to express your style with precision.`,
     generalManager: `CEO: `,
     managerName: `BAKOYEVA MUHABBAT`,
     womenSuit: `Ladies' suit`,
@@ -11,6 +11,7 @@ const translationsEn = {
     phone: `Phone: `,
     email: `Email: `,
     location: `Location: `,
+    locationData: `Bukhara region, Peshku district, Decha MFY, Decha street, house 3`,
 };
 
 export default translationsEn;
