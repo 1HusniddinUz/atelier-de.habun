@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "../../assets/Navbar.css";
 import { useTranslation } from "react-i18next";
-import { Menu, X } from "lucide-react"; // ikonka uchun
+import { Menu, X, ChevronDown } from "lucide-react"; // qo'shimcha icon
 
 const Navbar = () => {
     const { t, i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     // Body scroll lock
     useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden"; // scroll yo'q
-        } else {
-            document.body.style.overflow = "auto"; // scroll qaytadi
-        }
+        document.body.style.overflow = isOpen ? "hidden" : "auto";
     }, [isOpen]);
 
     return (
@@ -23,16 +20,34 @@ const Navbar = () => {
             {/* Desktop va Mobile Menu */}
             <ul className={`nav-links ${isOpen ? "open" : ""}`}>
                 <div className="navigation">
-                    <li>
-                        <a href="/">{t(`headersec`)}</a>
-                    </li>
+
                     <li>
                         <a href="#OurProducts">{t(`products`)}</a>
                     </li>
+
+                    {/* ✅ Dropdown - Marketplace */}
+                    <li
+                        className="dropdown"
+                        onMouseEnter={() => setIsDropdownOpen(true)}
+                        onMouseLeave={() => setIsDropdownOpen(false)}
+                    >
+                        <button
+                            className="dropdown-btn"
+                            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                        >
+                            <a href="#">Marketplace</a> <ChevronDown size={16} />
+                        </button>
+                        <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+                            <li><a href="#ozon">Ozon</a></li>
+                            <li><a href="#yandex">Yandex Market</a></li>
+                        </ul>
+                    </li>
+
                     <li>
                         <a href="#Footer">{t(`contact`)}</a>
                     </li>
                 </div>
+
                 <div className="lang_switcher_mobile">
                     <a
                         href="tel:+998996255527"
