@@ -58,8 +58,7 @@ const ContactForm = () => {
                     <i className="fa-brands fa-instagram" aria-hidden="true"></i>
                   </span>
                                     <span className="social__text">
-                    <span className="social__brand">ATELIER DE HABUN</span>
-                    <span className="social__platform">Instagram</span>
+                    <span className="social__brand">Instagram</span>
                   </span>
                                     <i className="fa-solid fa-arrow-up-right-from-square social__ext" aria-hidden="true"></i>
                                 </a>
@@ -74,8 +73,7 @@ const ContactForm = () => {
                     <i className="fa-brands fa-telegram" aria-hidden="true"></i>
                   </span>
                                     <span className="social__text">
-                    <span className="social__brand">ATELIER DE HABUN</span>
-                    <span className="social__platform">Telegram</span>
+                    <span className="social__brand">Telegram</span>
                   </span>
                                     <i className="fa-solid fa-arrow-up-right-from-square social__ext" aria-hidden="true"></i>
                                 </a>

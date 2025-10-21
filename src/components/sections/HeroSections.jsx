@@ -7,8 +7,8 @@ const HeroSections = () => {
     return (
     <div id='HeroSections'>
         <div id="HeroText">
-            <h1>{t(`quotes`)}</h1>
-            <p>{t(`aboutUs`)}</p>
+            <h1><span> {t(`dehabun`)}</span>{t(`quotes`)}</h1>
+            {/*<p>{t(`aboutUs`)}</p>*/}
             {/*<a href="#OurProducts"><button>{t(`products`)}</button></a>*/}
         </div>
         <div id="HeroProduct_bg"></div>

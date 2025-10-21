@@ -14,8 +14,8 @@ i18n.use(initReactI18next).init({
         ru: {translation: translationsRu},
         uz: {translation: translationsUz},
     },
-    lng: "ru", // Change this value to switch languages
-    fallbackLng: "ru", // if user language isn't available, use en as fallback
+    lng: "en", // Change this value to switch languages
+    fallbackLng: "en", // if user language isn't available, use en as fallback
 });
 
 function App() {

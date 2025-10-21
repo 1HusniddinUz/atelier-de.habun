@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 /* Hero Section umumiy */
 #HeroSections {
     width: 100%;
@@ -10,9 +12,10 @@
 
 /* Matn qismi */
 #HeroSections #HeroText {
+    right: 0;
     position: absolute;
     z-index: 2;
-    width: 100%;
+    width: 70%;
     height: 100%;
     text-align: center;
     display: flex;
@@ -22,13 +25,20 @@
     padding: 0 20px; /* yonlardan bo‘sh joy */
     box-sizing: border-box;
 }
-
+#HeroText h1 span
+{
+    font-family: "Hurricane", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 #HeroText h1 {
     margin: 0 auto;
+    font-family: "Parisienne", cursive;
+    font-weight: 500;
+    font-style: normal;
     max-width: 800px;
     color: white;
-    font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2;
 }
 
@@ -68,7 +78,7 @@
     background-size: cover;
     background-position: center;
     background-image: url("./media/hero_bg.png");
-    filter: blur(11px) brightness(0.66);
+    filter: blur(0px) brightness(0.7);
 }
 
 /* -------- RESPONSIVE -------- */
