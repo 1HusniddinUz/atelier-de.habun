@@ -1,6 +1,6 @@
 const translationsEn = {
     headersec: "Home page",
-    products: `Collections`,
+    products: `Clothing collection`,
     contact: `Contact Us`,
     dehabun : `ATELIER DE HABUN`,
     quotes: ` — Art tied with the thread of love`,

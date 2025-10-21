@@ -1,6 +1,6 @@
 const translationsUz = {
     headersec: "Bosh sahifa",
-    products: `Kolleksiyalar`,
+    products: `Liboslar kolleksiyasi`,
     contact: `Bog'lanish uchun`,
     dehabun : `ATELIER DE HABUN`,
     quotes: ` — Muhabbat ipi bilan bog‘langan san’at`,

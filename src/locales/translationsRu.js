@@ -1,6 +1,6 @@
 const translationsRu = {
     headersec: "Главная страница",
-    products: `Коллекции`,
+    products: `Коллекция одежды`,
     contact: `Контакты`,
     dehabun : `ATELIER DE HABUN`,
     quotes: ` — Искусство, связанное нитью любви`,

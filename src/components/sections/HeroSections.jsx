@@ -7,7 +7,7 @@ const HeroSections = () => {
     return (
     <div id='HeroSections'>
         <div id="HeroText">
-            <h1><span> {t(`dehabun`)}</span>{t(`quotes`)}</h1>
+            <h1><span> {t(`dehabun`)}</span> <br/>{t(`quotes`)} </h1>
             {/*<p>{t(`aboutUs`)}</p>*/}
             {/*<a href="#OurProducts"><button>{t(`products`)}</button></a>*/}
         </div>
